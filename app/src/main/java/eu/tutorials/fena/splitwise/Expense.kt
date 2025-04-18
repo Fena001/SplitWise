@@ -10,3 +10,4 @@ data class Expense(val id: String = UUID.randomUUID().toString(),
                    val split: Map<String, Double>)
 
 data class User(val name: String)
+data class Settlement(val from: String, val to: String, val amount: Double)
