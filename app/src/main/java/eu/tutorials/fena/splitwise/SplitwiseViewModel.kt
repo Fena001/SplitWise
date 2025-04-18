@@ -29,7 +29,7 @@ class SplitwiseViewModel : ViewModel(){
                 }
             }
         }
-        println("📊 Balances:")
+        println(" Balances:")
         map.forEach { println("${it.key}: ₹${String.format("%.2f", it.value)}") }
 
         map
@@ -53,7 +53,7 @@ class SplitwiseViewModel : ViewModel(){
         val balancesMap = balances.value.toMutableMap()
         val settlements = mutableListOf<Settlement>()
 
-        println("📊 Balances:")
+        println("Balances:")
         balances.value.forEach { println("${it.key}: ₹${String.format("%.2f", it.value)}") }
 
 
